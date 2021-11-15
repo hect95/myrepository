@@ -10,6 +10,9 @@ int main(int argc, char **argv)
   	//Initiate ROS
   	ros::init(argc, argv, "configuration_node");
 
+	ROS_INFO("Starting RADAR configuration");
+	ROS_INFO("Using RADARCFG_SENSORID: %i , FILTERCFG_INDEX: %i", socketcan_bridge::RADARCFG_SENSORID, socketcan_bridge::FILTERCFG_INDEX);
+
   	//Create an object of class ConfigurationNode that will take care of everything
   	socketcan_bridge::ConfigurationNode ConfigurationObject;
 
@@ -22,6 +25,9 @@ int main(int argc, char **argv)
   	sleep(8);
 
   	ros::spinOnce();
+
+	ROS_INFO("Done !");
+	
 
   	return 0;
 }

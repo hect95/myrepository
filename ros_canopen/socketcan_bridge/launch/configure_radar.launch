@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="socketcan_bridge" name="configuration_node" type="configuration_node" output="screen">
+        <remap from="/received_messages" to="/can_bus_dbw/can_rx" />
+        <remap from="/sent_messages" to="/can_bus_dbw/can_tx" />
+    </node>
+</launch>
