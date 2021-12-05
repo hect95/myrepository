@@ -33,14 +33,14 @@ const int RADARCFG_RCS_THRESHOLD = 0; // Set the sensibility of cluster detectio
 
 const int FILTERCFG_VALID = 1; // Allow change of filter configuration
 const int FILTERCFG_ACTIVE = 1; // Activate filter configuration
-const int FILTERCFG_INDEX = 0; // Multiplexor to specify which filter criterion to configure
+const int FILTERCFG_INDEX = 1; // Multiplexor to specify which filter criterion to configure
 const int FILTERCFG_TYPE = 1; // Choose between objects and clusters 0 cluster - 1 object
 // Index 0. Clusters and objects
 const double FILTERCFG_MIN_NOFOBJ = 0; // Number of clusters or objects 0 - 4095
 const double FILTERCFG_MAX_NOFOBJ = 100;
 const double FILTERCFG_RES_NOFOBJ = 1;
 // Index 1. Clusters and objects
-const double FILTERCFG_MIN_DISTANCE = 30; // Radial distance 0 - 409.5 m 
+const double FILTERCFG_MIN_DISTANCE = 1.0; // Radial distance 0 - 409.5 m 
 const double FILTERCFG_MAX_DISTANCE = 260;
 const double FILTERCFG_RES_DISTANCE = 0.1;
 // Index 2. Clusters and objects
